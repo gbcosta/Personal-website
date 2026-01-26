@@ -69,3 +69,6 @@ If you want to explore the code or run it on your machine, follow these steps:
 ├── tailwind.config.js  # Tailwind configuration
 ├── vite.config.js      # Vite configuration
 └── package.json        # Dependencies and scripts
+```
+---
+**Developed with ❤️ by Gabriel Santos**
