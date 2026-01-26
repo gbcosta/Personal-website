@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# My Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, designed to showcase my journey as a developer, the projects I've built, and the technologies I master. It serves as a central hub for my professional online presence.
 
-Currently, two official plugins are available:
+**Live Demo:** [gbcosta.vercel.app](https://gbcosta.vercel.app/)
+![portfolio index page](/home.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Built with modern web technologies for high performance and clean design:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* **Framework:** [React](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/) (For ultra-fast development and optimized builds)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Responsive and utility-first design)
+* **Language:** JavaScript/TypeScript
+* **Deployment:** [Vercel](https://vercel.com/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+* **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens.
+* **Project Showcase:** A curated list of my best work with descriptions and links.
+* **About Me:** A brief overview of my background, goals, and experience.
+* **Contact Integration:** Easy access to my social media and professional networks.
+* **Performance:** High Lighthouse scores thanks to Vite's optimization and clean code.
+
+---
+
+## 🚀 How to Run Locally
+
+If you want to explore the code or run it on your machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in your browser:**
+    Navigate to `http://localhost:5173`.
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── assets/         # Images, icons, and static files
+│   ├── App.jsx         # Main application logic
+│   └── index.css       # Tailwind directives and global styles
+├── public/             # Public assets
+├── tailwind.config.js  # Tailwind configuration
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies and scripts
