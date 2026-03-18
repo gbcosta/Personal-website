@@ -10,3 +10,5 @@ export const SKILLS = [
   "Springboot",
   "React",
 ];
+
+export const PHONE = "+5551994146278";

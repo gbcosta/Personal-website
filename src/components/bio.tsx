@@ -1,6 +1,6 @@
 import { DraggableItem } from "./draggableItem";
 import me from "../assets/me.jpg";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Heart, Linkedin } from "lucide-react";
 import { Dispatch, ReactNode, SetStateAction } from "react";
 import { BouncyButton } from "./bouncyButton";
 
@@ -58,7 +58,10 @@ export const Bio = ({
           <SocialButton link="https://www.linkedin.com/in/gbcostasantos/">
             <Linkedin size={18} />
           </SocialButton>
-          <BouncyButton setStars={setStars} />
+          <BouncyButton setStars={setStars}>
+            Boop Me!
+            <Heart size={18} />
+          </BouncyButton>
         </div>
       </div>
     </DraggableItem>

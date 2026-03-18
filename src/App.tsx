@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Bio } from "./components/bio";
 import { Header } from "./components/header";
 import { Skills } from "./components/skills";
-
+import { Contact } from "./components/contact";
 function App() {
   const constraintRef = useRef<any>(null);
   const [stars, setStars] = useState(0);
@@ -15,6 +15,7 @@ function App() {
       <Header stars={stars} />
       <Bio constraintRef={constraintRef} setStars={setStars} />
       <Skills constraintRef={constraintRef} />
+      <Contact constraintRef={constraintRef} />
     </div>
   );
 }
