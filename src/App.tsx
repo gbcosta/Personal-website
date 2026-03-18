@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Bio } from "./components/bio";
 import { Header } from "./components/header";
+import { Skills } from "./components/skills";
 
 function App() {
   const constraintRef = useRef<any>(null);
@@ -13,6 +14,7 @@ function App() {
     >
       <Header stars={stars} />
       <Bio constraintRef={constraintRef} setStars={setStars} />
+      <Skills constraintRef={constraintRef} />
     </div>
   );
 }
