@@ -16,7 +16,7 @@ export const Contact = ({ constraintRef }: { constraintRef: any }) => {
         <input
           value={message}
           onChange={(e) => {
-            setMessage((message) => (message = e.target.value));
+            setMessage(() => e.target.value);
           }}
           className="outline-none rounded-2xl border text-xs font-bold py-2 px-4
                     mb-2 "
