@@ -1,16 +1,18 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Bio } from "./components/bio";
 import { Header } from "./components/header";
 
 function App() {
   const constraintRef = useRef<any>(null);
+  const [stars, setStars] = useState(0);
   return (
     <div
-      className="min-h-screen min-w-screen bg-zinc-100 flex flex-col items-center"
+      className="h-screen w-screen max-h-screen bg-zinc-100 flex flex-col items-center
+            overflow-hidden select-none"
       ref={constraintRef}
     >
-      <Header />
-      <Bio constraintRef={constraintRef} />
+      <Header stars={stars} />
+      <Bio constraintRef={constraintRef} setStars={setStars} />
     </div>
   );
 }

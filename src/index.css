@@ -6,6 +6,6 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-html {
-  scroll-behavior: smooth;
+.playful-card {
+  @apply flex flex-col border-black border-4 rounded-xl shadow-[8px_8px_0px_0px_rgba(47,47,47,1)] justify-center bg-white p-8;
 }
