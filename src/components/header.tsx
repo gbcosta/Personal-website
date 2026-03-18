@@ -2,11 +2,11 @@ import { Smile, Star, Zap } from "lucide-react";
 
 export const Header = () => {
   return (
-    <div className="flex p-2 border-black border-3 rounded-full mt-4 shadow-[4px_4px_0px_0px_rgba(47,47,47,1)]">
+    <div className="flex p-2 border-black border-3 rounded-full mt-4 shadow-[4px_4px_0px_0px_rgba(47,47,47,1)] dot-pattern">
       <header className="flex gap-5">
         <div className="flex gap-2">
           <Zap className="text-red-400" fill="currentColor" />
-          <span className="uppercase font-sans font-bold tracking-wider">
+          <span className="uppercase font-bold tracking-wider">
             gabriel.dev
           </span>
         </div>
