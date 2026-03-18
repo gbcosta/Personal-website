@@ -1,5 +1,5 @@
 import { Smile, Star, Zap } from "lucide-react";
-
+import { motion } from "motion/react";
 export const Header = ({ stars }: { stars: number }) => {
   return (
     <div
@@ -8,7 +8,13 @@ export const Header = ({ stars }: { stars: number }) => {
     >
       <header className="flex gap-5">
         <div className="flex gap-2">
-          <Zap className="text-red-400" fill="currentColor" />
+          <motion.div
+            animate={{ rotate: [0, 10, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="text-primary"
+          >
+            <Zap className="text-red-400" fill="currentColor" />
+          </motion.div>
           <span className="uppercase font-bold tracking-wider">
             gabriel.dev
           </span>
