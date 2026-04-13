@@ -3,10 +3,12 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="relative h-[500vh] bg-[#f0f0f0]">
-      <Header />
-      <Content />
-    </div>
+    <main className="min-h-screen w-full selection:bg-black selection:text-white">
+      <div className="relative h-[500vh] bg-[#f0f0f0] overflow-hidden">
+        <Header />
+        <Content />
+      </div>
+    </main>
   );
 }
 
