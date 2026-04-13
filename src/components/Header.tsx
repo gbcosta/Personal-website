@@ -1,57 +1,28 @@
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-center ">
-      <div
-        className="max-w-7xl flex w-full border-white/10 border rounded-xl
-                mt-4 items-center relative"
+    <header
+      className="fixed top-6 left-0 w-full flex justify-between px-8 z-50 
+            mix-blend-difference text-white"
+    >
+      <h2 className="font-sans font-black text-2xl uppercase">gabriel_costa</h2>
+      <nav
+        className="font-sans uppercase text-[10px] font-bold tracking-widest flex 
+                flex-col gap-2 items-end"
       >
-        <div
-          className="fixed w-full h-1 max-w-7xl top-[14px]
-                        bg-gradient-to-r from-transparent via-indigo-500 to-transparent animate-pulse"
-        />
-        <div
-          className="flex h-full gap-4 items-center border border-r-white/10 px-8 py-2
-                        rounded-l-xl"
-        >
-          <span
-            className="text-indigo-500 flex items-center uppercase font-sans
-                            text-xs font-semibold gap-2 tracking-[0.2em]"
+        <span>front-end developer</span>
+        <span>based in brazil</span>
+        <div className="mt-2 flex gap-4">
+          <a href="https://github.com/gbcosta" className="hover:line-through">
+            github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gbcostasantos/"
+            className="hover:line-through"
           >
-            <div className="w-2 h-2 rounded-full bg-indigo-600" />
-            p1
-          </span>
-          <div className="font-display uppercase gap-1 flex font-bold">
-            <span className="text-zinc-200">gabriel</span>
-            <span className="text-zinc-400">santos</span>
-          </div>
+            linkedin
+          </a>
         </div>
-        <div
-          className="flex gap-1 uppercase text-xs font-bold items-center grow
-                        justify-end mr-8"
-        >
-          <span className="text-zinc-700 tracking-[0.2em]">stage</span>
-          <span className="text-indigo-600">01</span>
-        </div>
-        <div className="w-[1px] bg-white/10 h-2/4" />
-        <div className="flex gap-1 uppercase text-xs font-bold items-center grow ml-8">
-          <span className="text-zinc-700 tracking-[0.2em]">status</span>
-          <span className="text-emerald-600">ready</span>
-        </div>
-        <div className="flex items-center px-4">
-          {["about", "skills", "projects", "contact"].map((skill) => {
-            return (
-              <a
-                key={skill}
-                className="text-xs tracking-[0.1em] uppercase text-zinc-400 font-black font-sans
-                            hover:text-white py-2 px-4 hover:bg-white/10 rounded-lg transition-all
-                            cursor-pointer"
-              >
-                {skill}
-              </a>
-            );
-          })}
-        </div>
-      </div>
+      </nav>
     </header>
   );
 };
