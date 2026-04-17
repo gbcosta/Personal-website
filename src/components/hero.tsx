@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export const Hero = () => {
   return (
-    <section className="uppercase flex flex-col justify-center w-[100vw]">
+    <section className="uppercase flex flex-col justify-center min-w-[100vw]">
       <motion.h1
         className="text-[25vw] font-black leading-[0.8] tracking-tighter mb-8"
         initial={{ opacity: 0, x: 100 }}
