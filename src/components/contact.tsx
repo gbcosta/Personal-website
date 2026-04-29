@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const Contact = () => {
   return (
-    <section className="uppercase min-h-[100vh] flex justify-center items-center flex-col">
+    <section className="uppercase min-h-[100vh] flex justify-center items-center flex-col px-64">
       <h3 className="text-[16vw] text-center text-black font-black h-full leading-[0.8]">
         Contact
         <br />

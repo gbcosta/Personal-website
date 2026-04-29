@@ -9,9 +9,35 @@ import { Hero } from "./hero";
 import { About } from "./about";
 import { Projects } from "./projects";
 import { Contact } from "./contact";
+import { useEffect, useState } from "react";
+
 export const Content = () => {
+  function getXmax() {
+    const [windowSize, setWindowSize] = useState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    console.log(`-${(1920 - windowSize.width) / 300 + 76}%`, windowSize.width);
+    return `-${(1920 - windowSize.width) / 300 + 76}%`;
+  }
+
+  const xMax = getXmax();
+
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", xMax]);
   const smoothX = useSpring(x, { damping: 10, stiffness: 50 });
 
   const scrollVelocity = useVelocity(scrollYProgress);
