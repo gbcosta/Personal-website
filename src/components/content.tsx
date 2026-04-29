@@ -8,6 +8,7 @@ import {
 import { Hero } from "./hero";
 import { About } from "./about";
 import { Projects } from "./projects";
+import { Contact } from "./contact";
 export const Content = () => {
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
@@ -32,6 +33,7 @@ export const Content = () => {
         <Hero />
         <About />
         <Projects />
+        <Contact />
       </motion.div>
     </div>
   );
