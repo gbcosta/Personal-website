@@ -14,6 +14,7 @@ Built with modern web technologies for high performance and clean design:
 * **Framework:** [React](https://react.dev/)
 * **Build Tool:** [Vite](https://vitejs.dev/) (For ultra-fast development and optimized builds)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Responsive and utility-first design)
+* **Animation:** [Motion](https://motion.dev/)
 * **Language:** JavaScript/TypeScript
 * **Deployment:** [Vercel](https://vercel.com/)
 
